@@ -1,0 +1,33 @@
+.form-tittle{
+    text-align: center;
+    margin: 30px;
+    color: blue;
+}
+
+.form{
+    text-align: center;
+    padding: 20px;
+}
+
+.form-div{
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+}
+
+.form-label{
+    display: block;
+    text-align: start;
+}
+
+.form-input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightblue;
+}
