@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/forms/forms-styles.css">
+    
+    <title>Document</title>
+</head>
+    
+<body>
+        <h1 class="form-tittle">FORMULARIO DE EDICION DE USUARIOS</h1>    
+        <form class="form" action="/users/edit/<%= userToEdit.cuil %>?_method=put" method="post">
+            <div class="form-div">
+                <label class="form-label" for="">CUIL: </label>
+                <input class="form-input" type="text" name="cuil" value="<%= userToEdit.cuil %>">
+            </div>
+            <div class="form-div">
+                <label class="form-label" for="">NOMBRE: </label>
+                <input class="form-input" type="text" name="nombre" value="<%= userToEdit.nombre %>">
+            </div>
+            <div class="form-div">
+                <label class="form-label" for="">APELLIDO: </label>
+                <input class="form-input" type="text" name="apellido" value="<%= userToEdit.apellido %>">
+            </div>
+            <div class="form-div">
+                <label class="form-label" for="">E-MAIL: </label>
+                <input class="form-input" type="email" name="email" value="<%= userToEdit.email %>">
+            </div>
+            <div class="form-div">
+                <label class="form-label" for="">DEPENDENCIA: </label>
+                <input class="form-input" type="text" name="dependencia" value="<%= userToEdit.dependencia %>">
+            </div>
+            <div class="form-div">
+                <button class="form-button" type="submit">EDITAR</button>
+                <button class="form-button" type="reset">BORRAR</button>
+            </div>
+        </form>
+    
+</body>
+</html>

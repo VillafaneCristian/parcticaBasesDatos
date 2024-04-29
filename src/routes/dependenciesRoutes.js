@@ -6,6 +6,12 @@ const dependenciesController = require ('../controllers/dependenciesController.j
 router.get('/', dependenciesController.index); 
 
 router.get('/create', dependenciesController.create); 
+router.post('/create',dependenciesController.store);
+
+router.get('/edit/:id', dependenciesController.edit);
+router.put('/edit/:id', dependenciesController.update); 
+
+router.delete('/delete/:id', dependenciesController.delete);
 
 
 

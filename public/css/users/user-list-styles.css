@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+.tittle{
+    text-align: center;
+}
+
+.table{
+    margin: auto;
+}
+
+th{ 
+    border-bottom: 1px solid black;
+}
+
+td{
+   padding: 10px 30px; 
+}

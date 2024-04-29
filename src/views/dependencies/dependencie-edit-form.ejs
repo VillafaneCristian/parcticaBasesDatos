@@ -10,30 +10,30 @@
     <title>ALTA DE DEPENDENCIA</title>
 </head>
 <body>
-    <h1 class="form-tittle">FORMULARIO DE ALTA DE DEPENDENCIA</h1>    
-    <form class="form" action="/dependencies/create" method="post">
+    <h1 class="form-tittle">FORMULARIO DE EDICION DE DEPENDENCIA</h1>    
+    <form class="form" action="/dependencies/edit/<%= dependencieToEdit.id %>?_method=put" method="post">
         <div class="form-div">
             <label class="form-label" for="">CODIGO: </label>
-            <input class="form-input" type="text" name="id">
+            <input class="form-input" type="text" name="id" value="<%= dependencieToEdit.id %>">
         </div>
         <div class="form-div">
             <label class="form-label" for="">DEPENDENCIA: </label>
-            <input class="form-input" type="text" name="nombre">
+            <input class="form-input" type="text" name="nombre" value="<%= dependencieToEdit.nombre %>">
         </div>
         <div class="form-div">
             <label class="form-label" for="">E-MAIL: </label>
-            <input class="form-input" type="email" name="email">
+            <input class="form-input" type="email" name="email" value="<%= dependencieToEdit.email %>">
         </div>
         <div class="form-div">
             <label class="form-label" for="">PISO: </label>
-            <input class="form-input" type="text" name="piso">
+            <input class="form-input" type="text" name="piso" value="<%= dependencieToEdit.piso %>">
         </div>
         <div class="form-div">
             <label class="form-label" for="">LADO: </label>
-            <input class="form-input" type="text" name="lado">
+            <input class="form-input" type="text" name="lado" value="<%= dependencieToEdit.lado %>">
         </div>
         <div class="form-div">
-            <button class="form-button" type="submit">CREAR</button>
+            <button class="form-button" type="submit">EDITAR</button>
             <button class="form-button" type="reset">BORRAR</button>
         </div>
     </form>
